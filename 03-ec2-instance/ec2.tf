@@ -3,6 +3,6 @@ resource "aws_instance" "app" { # aws_instance is a keyword, web is also a keywo
   instance_type = "t2.micro"
 
   tags = {
-    Name = "HelloWorld"
+            Name = "HelloWorld"
   }
 }
