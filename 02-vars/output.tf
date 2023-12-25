@@ -20,7 +20,23 @@ output "batch_number" {
 variable "numerical" {
     default = 100
 }
-
+# declaring number data type and printing
 output "numerical-op" {
   value = var.numerical
+}
+# declaring a list variable type, a key with multiple values is referred as list
+
+variable "sample-list" {
+    default = [
+        "Devops",
+        "Aws cloud",
+        100,
+        false,
+        "khan",
+        56
+    ]  
+}
+# printing list variable 
+output "sample-list-op" {
+    value = var.sample-list  
 }
