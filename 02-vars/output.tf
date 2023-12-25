@@ -36,7 +36,21 @@ variable "sample-list" {
         56    # element 5
     ] 
 }
-# printing list variable 
+# printing list variable and extracting list variables
 output "sample-list-op" {
     value = "Welcome to ${var.sample-list[0]} with ${var.sample-list[1]} training and this is our batch ${var.sample-list[5]} and top student is ${var.sample-list[4]}"  
+}
+
+# declaring a map var
+
+variable "training-map" {
+   default = {
+    batch = 56
+    mode = "online"
+    training = "Devops with AWS"
+   }
+}
+# Printing a map variable
+output "training-map-op" {
+    value =   ${var.training-map[training]}
 }
