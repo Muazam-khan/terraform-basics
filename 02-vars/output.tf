@@ -73,7 +73,7 @@ output "province-op" {
     value = var.province  
 }
 
-variable "country" { # since value of city is not declared, outputting will prompt u to enter the city name
+variable "country" { 
 }
 
 output "country-op" {
