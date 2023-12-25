@@ -58,3 +58,10 @@ output "training-map-op" {
 ### We can declare variables in a variable file and that would be picked up by TF and the variables file should always be ending with *.tfvars.check "
 
 ### terraform.tfvars is the default file that would be picked. 
+
+variable "city" { # since value of city is not declared, outputting will prompt u to enter the city name
+}
+
+output "city-op" {
+    value = var.city  
+}
