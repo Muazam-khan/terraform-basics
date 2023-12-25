@@ -27,14 +27,14 @@ output "numerical-op" {
 # declaring a list variable type, a key with multiple values is referred as list
 
 variable "sample-list" {
-    default = {
-        "Devops",
-        "Aws cloud",
+    default = [
+        "Devops",    # element 0
+        "Aws cloud",  # element 1
         100,
         false,
         "khan",
-        56
-} 
+        56    # element5
+    ] 
 }
 # printing list variable 
 output "sample-list-op" {
