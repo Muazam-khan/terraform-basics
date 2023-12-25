@@ -52,5 +52,5 @@ variable "training-map" {
 }
 # Printing a map variable
 output "training-map-op" {
-    value =   ${var.training-map[training]}
+    value =   "${var.training-map[training]}"
 }
