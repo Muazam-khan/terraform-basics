@@ -9,7 +9,7 @@
 
    >  Here are some key aspects of Terraform and reasons why companies adopt it:
 
-       *  Infrastructure as Code (IaC): Terraform enables the practice of treating infrastructure as code. Infrastructure configurations are written in a human-readable language, allowing teams to version, share, and manage infrastructure code alongside application code. This brings the benefits of version control, collaboration, and code review to infrastructure management.
+       *  Infrastructure as Code (IaC): Terraform enables the practice of treating infrastructure as a code. Infrastructure configurations are written in a human-readable language, allowing teams to version, share, and manage infrastructure code alongside application code. This brings the benefits of version control, collaboration, and code review to infrastructure management.
 
       *  Declarative Configuration: Terraform uses a declarative approach, meaning you specify the desired state of your infrastructure, and Terraform takes care of figuring out how to achieve that state. This simplifies the process of provisioning and managing infrastructure, as users don't need to worry about the sequence of operations or low-level details.
 
@@ -25,12 +25,9 @@
 
       *  Ecosystem and Modules: Terraform has a rich ecosystem of providers and modules that extend its functionality. Providers allow integration with various infrastructure services, while modules enable the reuse of infrastructure configurations, promoting modularity and code reuse.
 
-      *  Overall, companies adopt Terraform to streamline and automate their infrastructure management processes, improve collaboration among teams, ensure consistency across environments, and take advantage of the benefits of infrastructure as code.
-
-
+      *  Overall, companies adopt Terraform to streamline and automate their infrastructure management processes, improve collaboration among teams, ensure consistency across environments, and take advantage of the benefits of infrastructure as a code.
 '''
 ### What are the 4 commands or options that you often use while dealing terrform ?
-
 ...
       $ terraform init:
                 Initializes terraform working directory by downloading the necessary providers and modules specified in the configuration.
@@ -43,7 +40,6 @@
 
     $ terraform apply:
                 It applies the changes defined in the Terraform configuration, creating, updating, or deleting resources to achieve the desired infrastructure state. ( Techincally applies the changes show on the plan )
-
 ...
 
 ### What are + , -, -/+ when dealing with terraform plan ?
@@ -60,7 +56,7 @@
 ...
 ### When enclose a variable in Quotes and when to use $ notation for a variable ???
 ...
-     Whenever your variable is enclosed in a set of strings or in between a sentence, then we to enslose them in strings and with bash notation. Strings are supposed to be enclosed in double quotes whilst Numbers & Booleans don't need any type of quotes.
+     Whenever your variable is enclosed in a set of strings or in between a sentence, then we need to enslose them in strings and with bash notation. Strings are supposed to be enclosed in double quotes whilst Numbers & Booleans don't need any type of quotes.
 ...
 ### 1) -var Command-Line Option:
 ...
