@@ -2,6 +2,6 @@ output "sample" {  // output is a reserved keyword and name of output is sample 
      value = "Hello World"
 }
 
-#output "demo" { 
- #    value = "This is a demo output"
-#}
+output "demo" { 
+     value = "This is a demo output"
+}
