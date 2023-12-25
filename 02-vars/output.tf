@@ -79,3 +79,11 @@ variable "country" {
 output "country-op" {
     value = var.country  
 }
+
+variable "environment" { 
+}
+
+output "environment-op" {
+    value = "Name of the environment is ${var.environment}"  
+}
+
