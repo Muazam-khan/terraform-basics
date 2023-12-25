@@ -38,5 +38,5 @@ variable "sample-list" {
 }
 # printing list variable 
 output "sample-list-op" {
-    value = var.sample-list  
+    value = "Welcome to ${var.sample-list[0]} with ${var.sample-list[1]} training and this is our batch ${var.sample-list[5]}"  
 }
