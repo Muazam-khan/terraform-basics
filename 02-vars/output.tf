@@ -14,6 +14,6 @@ output "batch-op" {
 # whenever ur var is enclosed in a set of strings or in b/w a sentence then we need to enclose them in strings and with bash notation.check "name" {
   
 output "batch_number" {
-    value = Current Batch is var.batch
+    value = "Current Batch is ${var.batch}"
 }
 
