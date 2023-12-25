@@ -88,6 +88,8 @@ output "environment-op" {
 }
 
 # example of shell variables usage
+# u can supply value of shell var from cmd line using export
+# export TF_VAR_varName=value
 
 variable "course" {
   
