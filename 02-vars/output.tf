@@ -87,3 +87,12 @@ output "environment-op" {
     value = "Name of the environment is ${var.environment}"  
 }
 
+# example of shell variables usage
+
+variable "course" {
+  
+}
+output "course-op" {
+  value = var.course
+}
+
