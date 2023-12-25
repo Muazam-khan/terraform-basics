@@ -33,10 +33,10 @@ variable "sample-list" {
         100,
         false,
         "khan",
-        56    # element5
+        56    # element 5
     ] 
 }
 # printing list variable 
 output "sample-list-op" {
-    value = "Welcome to ${var.sample-list[0]} with ${var.sample-list[1]} training and this is our batch ${var.sample-list[5]}"  
+    value = "Welcome to ${var.sample-list[0]} with ${var.sample-list[1]} training and this is our batch ${var.sample-list[5]} and top student is ${var.sample-list[4]}"  
 }
