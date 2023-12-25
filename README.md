@@ -90,7 +90,7 @@
 
 ## Arguments
 ...
-      Properties of the resource that you would to define as a part of the creation.
+      Properties of the resource that you would like to define as a part of the creation.
         Ex:  instance_type, ami
 ...
 ### Attributes
