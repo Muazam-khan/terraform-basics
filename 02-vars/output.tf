@@ -36,7 +36,7 @@ variable "sample-list" {
         56    # element 5
     ] 
 }
-# printing list variable and extracting list variables
+# printing list variable and extracting list variables, we reference by element 0, 1,2,3, etc
 output "sample-list-op" {
     value = "Welcome to ${var.sample-list[0]} with ${var.sample-list[1]} training and this is our batch ${var.sample-list[5]} and top student is ${var.sample-list[4]}"  
 }
@@ -50,7 +50,11 @@ variable "training-map" {
     training = "Devops with AWS"
    }
 }
-# Printing a map variable
+# Printing a map variable, in map variable we do not need 
 output "training-map-op" {
     value =   "${var.training-map["training"]} has great scope of opprtunities and it is completely ${var.training-map["mode"]} course and current batch number is ${var.training-map["batch"]}"
 }
+### In realitly, we write the code very generic and values would be from the external file based on the environment.
+### We can declare variables in a variable file and that would be picked up by TF and the variables file should always be ending with *.tfvars.check "
+
+### terraform.tfvars is the default file that would be picked. 
