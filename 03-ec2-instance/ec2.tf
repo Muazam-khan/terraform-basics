@@ -8,9 +8,9 @@ resource "aws_instance" "web" { # aws_instance is a keyword, web is also a keywo
 }
 
 output "instance_dns" {     # attribute
-   value = aws_instance.app.private_dns
+   value = aws_instance.web.private_dns
 }
 
 output "instance_arn" {     # attribute
-   value = aws_instance.app.arn
+   value = aws_instance.web.arn
 }
